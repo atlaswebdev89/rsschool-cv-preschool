@@ -1,4 +1,3 @@
 # Doroshuk Dmitry
-
 ## Skills
 ## Contacts
