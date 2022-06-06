@@ -53,6 +53,6 @@ console.log( result );
 * English (Elementary (A1)) 
 
 ### Projects:
-* https://github.com/doroshuk89/test
-* https://github.com/doroshuk89/wp-plugins-kurs-valut-belarusbank
-* https://github.com/doroshuk89/wp-plugins-person-team
+* [Тестовое задание: Регистрация Авторизания и Аутентификация (html+css+php+mysql)](https://github.com/doroshuk89/test)
+* [Wordpress plugin: Курсы валют](https://github.com/doroshuk89/wp-plugins-kurs-valut-belarusbank)
+* [Wordpress plugin: Команда участников](https://github.com/doroshuk89/wp-plugins-person-team)
