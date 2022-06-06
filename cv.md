@@ -1,7 +1,5 @@
 # Doroshuk Dmitry
-***
 ## Junior Frontend Developer
-***
 ## Contacts:
 ***
 ## About Me:
