@@ -51,3 +51,8 @@ console.log( result );
 * Russian
 * Belarusian
 * English (Elementary (A1)) 
+
+### Projects:
+* https://github.com/doroshuk89/test
+* https://github.com/doroshuk89/wp-plugins-kurs-valut-belarusbank
+* https://github.com/doroshuk89/wp-plugins-person-team
