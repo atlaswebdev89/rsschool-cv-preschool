@@ -1,3 +1,15 @@
 # Doroshuk Dmitry
-## Skills
-## Contacts
+***
+## Junior Frontend Developer
+***
+## Contacts:
+***
+## About Me:
+***
+## Skills:
+***
+## Code Example:
+***
+## Education:
+***
+## Languages:
