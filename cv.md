@@ -8,6 +8,13 @@
 * **Telegram**: @atlas_it89
 ***
 ### About Me:
+
+I've been programming for 5 years intermittently. Most of the time I was engaged in back-end programming: php, mysql, docker, wordpress, vagrant. He did not take part in commercial projects. The main projects are sites on wordpress.
+
+I want to improve my level of programming in javascript.
+
+About me: assiduous, patient, communicative, propensity for exact sciences, desire to develop in the field of IT
+
 ***
 ### Skills:
 * HTML5, CSS4,  JSON
