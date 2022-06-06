@@ -24,6 +24,13 @@
 * linux (debian, ubuntu)
 ***
 ### Code Example:
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+let result = sum(2, 5);
+console.log( result );
+```
 ***
 ### Education:
 * Brest State Polytechnic College, Brest (2005 - 2009)
