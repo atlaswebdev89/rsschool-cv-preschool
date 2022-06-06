@@ -6,7 +6,9 @@
 * **Email**: web.dev89@yandex.by
 * **GitHub**: [doroshuk89](https://github.com/doroshuk89)
 * **Telegram**: @atlas_it89
+
 ***
+
 ### About Me:
 
 I've been programming for 5 years intermittently. Most of the time I was engaged in back-end programming: php, mysql, docker, wordpress, vagrant. He did not take part in commercial projects. The main projects are sites on wordpress.
@@ -16,6 +18,7 @@ I want to improve my level of programming in javascript.
 About me: assiduous, patient, communicative, propensity for exact sciences, desire to develop in the field of IT
 
 ***
+
 ### Skills:
 * HTML5, CSS4,  JSON
 * Bootstrap, Flex, JQuery, Ajax
@@ -29,7 +32,9 @@ About me: assiduous, patient, communicative, propensity for exact sciences, desi
 * docker, docker-compose, docker swarm,  vagrant
 * gulp
 * linux (debian, ubuntu)
+
 ***
+
 ### Code Example:
 ```javascript
 function sum(a, b) {
@@ -38,7 +43,9 @@ function sum(a, b) {
 let result = sum(2, 5);
 console.log( result );
 ```
+
 ***
+
 ### Education:
 * Brest State Polytechnic College, Brest (2005 - 2009)
 * Belarusian State University of Informatics and Radioelectronics, Minsk (2009 - 2013)
@@ -46,7 +53,9 @@ console.log( result );
 * WEB programming in PHP+Mysql (2014)
 * Courses Academy IBA: CISCO CCNA (2015)
 * PHP Atevi System: Bitrix24 (2020)
+
 ***
+
 ### Languages:
 * Russian
 * Belarusian
