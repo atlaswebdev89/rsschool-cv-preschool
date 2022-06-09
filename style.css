@@ -3,59 +3,14 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background-color: aquamarine;
+}
 .wrapper {
   padding: 0 20px;
   width: 100%;
 }
 /* Burger */
-
-@media (max-width: 767px) {
-  .page-navigation {
-    transform: translateY(-200%);
-  }
-  .page-header-burger {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    height: 22px;
-    width: 24px;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-  }
-  .page-header-burger:hover {
-    opacity: 1;
-  }
-
-  .burger-line {
-    position: absolute;
-    top: 10px;
-    width: 24px;
-    height: 2px;
-    display: block;
-    background-color: black;
-  }
-  .page-header-burger::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 5px;
-    width: 14px;
-    height: 2px;
-    display: block;
-    background-color: black;
-  }
-  .page-header-burger::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 5px;
-    width: 14px;
-    height: 2px;
-    display: block;
-    background-color: black;
-  }
-}
 
 /* Styles main Menu*/
 .header-wrapper {
@@ -131,7 +86,84 @@
   color: rgb(166, 192, 70);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .page-navigation {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    background-color: #4c4747;
+    transform: translateY(-200%);
+    transition: all 0.7s ease;
   }
+  .site-navigation {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+  }
+
+  .page-header-burger {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    height: 22px;
+    width: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  .page-header-burger:hover {
+    opacity: 1;
+  }
+
+  .burger-line {
+    position: absolute;
+    top: 10px;
+    width: 24px;
+    height: 2px;
+    display: block;
+    background-color: black;
+    transition: all 0.4s;
+  }
+  .page-header-burger::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 14px;
+    height: 2px;
+    display: block;
+    background-color: black;
+    transition: all 0.4s;
+  }
+  .page-header-burger::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 14px;
+    height: 2px;
+    display: block;
+    background-color: black;
+    transition: all 0.4s;
+  }
+}
+
+.page-header-burger:hover .burger-line {
+  display: none;
+  transform: rotate(90deg);
+}
+.page-header-burger:hover::before {
+  top: 10px;
+  width: 20px;
+  transform: rotate(45deg);
+}
+.page-header-burger:hover::after {
+  top: 10px;
+  width: 20px;
+  transform: rotate(135deg);
 }
