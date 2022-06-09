@@ -1,3 +1,137 @@
-h1 {
-	font-style: italic;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 0 20px;
+  width: 100%;
+}
+/* Burger */
+
+@media (max-width: 767px) {
+  .page-navigation {
+    transform: translateY(-200%);
+  }
+  .page-header-burger {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    height: 22px;
+    width: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  .page-header-burger:hover {
+    opacity: 1;
+  }
+
+  .burger-line {
+    position: absolute;
+    top: 10px;
+    width: 24px;
+    height: 2px;
+    display: block;
+    background-color: black;
+  }
+  .page-header-burger::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 14px;
+    height: 2px;
+    display: block;
+    background-color: black;
+  }
+  .page-header-burger::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 14px;
+    height: 2px;
+    display: block;
+    background-color: black;
+  }
+}
+
+/* Styles main Menu*/
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 auto;
+  height: 80px;
+}
+
+.page-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+.page-navigation {
+  font-size: 18px;
+  display: block;
+}
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+}
+.site-navigation__item {
+  list-style: none;
+}
+.site-navigation-link {
+  color: rgb(33, 35, 36);
+  position: relative;
+  display: inline-block;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: all 0.6s ease;
+  text-transform: uppercase;
+}
+
+.site-navigation-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.5s ease-out;
+}
+.site-navigation-link:hover::after {
+  width: 100%;
+}
+
+.site-navigation-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid #cacaca;
+  opacity: 0;
+  transition: 0.7s;
+  pointer-events: none;
+  transform: scale(0.8);
+}
+
+.site-navigation-link:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+.site-navigation-link:hover {
+  color: rgb(166, 192, 70);
+}
+
+@media (max-width: 992px) {
+  .page-navigation {
+  }
 }
