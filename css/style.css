@@ -154,8 +154,7 @@ body {
 }
 
 .page-header-burger:hover .burger-line {
-  display: none;
-  transform: rotate(90deg);
+  opacity: 0;
 }
 .page-header-burger:hover::before {
   top: 10px;
