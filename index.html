@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="styles/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="styles/fontello.css" />
     <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
     <title>Doroshuk Dzmitry - Junior Web Developer</title>
   </head>
@@ -83,38 +83,38 @@
           </div>
         </div>
         <aside>
-          <section class="contacts common-style">
+          <section id="contacts" class="contacts common-style">
             <h2 class="section-title">&lt; Contacts /&gt;</h2>
             <ul class="contact-list">
               <li class="contact-item">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <i class="icon-location" aria-hidden="true"></i>
                 <span class="contact-text">Brest, Belarus</span>
               </li>
               <li class="contact-item">
-                <i class="fa fa-phone" aria-hidden="true"></i>
+                <i class="icon-phone-squared" aria-hidden="true"></i>
                 <span class="contact-text">
                   <a href="tel:+375297293386">+375 (29) 729-33-86</a>
                 </span>
               </li>
               <li class="contact-item">
-                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                <i class="icon-mail"></i>
                 <span class="contact-text">
                   <a href="mailto:web.dev89@yandex.by">web.dev89@yandex.by</a>
                 </span>
               </li>
               <li class="contact-item">
-                <i class="fa fa-telegram" aria-hidden="true"></i>
+                <i class="icon-telegram" aria-hidden="true"></i>
                 <span class="contact-text">@atlas_it89</span>
               </li>
               <li class="contact-item">
-                <i class="fa fa-github-square" aria-hidden="true"></i>
+                <i class="icon-github-squared" aria-hidden="true"></i>
                 <span class="contact-text">
                   <a href="https://github.com/doroshuk89">doroshuk89</a>
                 </span>
               </li>
             </ul>
           </section>
-          <section class="skills">
+          <section id="skills" class="skills">
             <h2 class="section-title">&lt; Skills /&gt;</h2>
             <ul class="skill-wrapper">
               <li class="skill-block">
@@ -285,7 +285,7 @@
               </li>
             </ul>
           </section>
-          <section class="lang common-style">
+          <section id="lang" class="lang common-style">
             <h2 class="section-title">&lt; Languages /&gt;</h2>
             <ul class="languages-list">
               <li class="languages-item">English (Elementary (A1))</li>
@@ -295,7 +295,7 @@
           </section>
         </aside>
         <main class="main">
-          <section class="profile">
+          <section class="profile" id="about">
             <h2 class="section-title-main">&lt; Profile /&gt;</h2>
             <p class="about">
               I've been programming for 5 years intermittently. Most of the time
@@ -310,7 +310,7 @@
               sciences, desire to develop in the field of IT
             </p>
           </section>
-          <section class="education">
+          <section id="edu" class="education">
             <h2 class="section-title-main">&lt; Education /&gt;</h2>
             <div class="edu-block">
               <div class="udy-date">2006-2009</div>
@@ -338,16 +338,73 @@
               <p>PHP Atevi System: PHP</p>
             </div>
           </section>
-          <section class="example-core">
+          <section id="code" class="example-core">
             <h2 class="section-title-main">&lt; Example Code /&gt;</h2>
-            <div>php</div>
+            <div class="codes">
+              <pre>
+                <code>
+                function sum(a, b) {
+                    return a + b;
+                }
+                let result = sum(2, 5);
+                console.log( result );
+              </code>
+              </pre>
+            </div>
           </section>
-          <section class="projects">
+          <section id="projects" class="projects">
             <h2 class="section-title-main">&lt; Projects /&gt;</h2>
+            <div class="projects__wrapper">
+              <p class="projects-text">Examples of completed projects</p>
+              <ul class="projects">
+                <li class="project-item">
+                  <a href="https://github.com/doroshuk89/test">
+                    Test task: Registration Authorization and Authentication
+                    (html+css+php+mysql)
+                  </a>
+                </li>
+                <li class="project-item">
+                  <a
+                    href="https://github.com/doroshuk89/wp-plugins-kurs-valut-belarusbank"
+                  >
+                    Wordpress plugin: Exchange rates
+                  </a>
+                </li>
+                <li class="project-item">
+                  <a
+                    href="https://github.com/doroshuk89/wp-plugins-person-team"
+                  >
+                    Wordpress plugin: Team of participants
+                  </a>
+                </li>
+                <li class="project-item">
+                  <a href="https://sv-loft.by">
+                    Loft-style furniture website
+                  </a>
+                </li>
+              </ul>
+            </div>
           </section>
         </main>
       </div>
     </div>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer-my-github">
+          <a href="https://github.com/doroshuk89">
+            <i class="icon-github-squared" aria-hidden="true"></i>
+            <span class="contact-text"> My github </span>
+          </a>
+        </div>
+        <div class="footer-year">
+          <span>2022</span>
+        </div>
+        <div class="footer-link-courses">
+          <a href="https://rs.school/js-stage0/">
+            <img src="images/content/rs-logo.svg" alt="rs-school" />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
