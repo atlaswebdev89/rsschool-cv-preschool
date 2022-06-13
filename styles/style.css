@@ -1,5 +1,6 @@
 :root {
-  --body-main-color: rgb(213, 224, 221);
+  --body-main-color: rgb(237 237 237);
+  --backgpound-color-nav-menu:#fff;
   --color-link-menu: rgb(33, 35, 36);
   --color-hover-link-menu: rgb(143, 143, 143);
   --color-hover-border-link-menu: #534e4e;
@@ -10,6 +11,14 @@
   --color-background-menu-mobile: #4c4c4c;
   --color-burger: #222;
   --block-content-max-width: 1400px;
+
+  --background-color-text-content: var(--color-hover-border-link-menu);
+  --color-text-content: #fff;
+  --backgpound-color-aside: rgb(95, 95, 122);
+  --aside-h2-color-text: #fff;
+  --color-ul-item: rgb(26, 88, 150);
+  --backgpound-color-h2-header-aside: rgb(143, 136, 136);
+  --backgpound-color-h2-header-before: rgb(238, 241, 21);
 }
 
 * {
@@ -26,7 +35,6 @@ body {
 }
 
 .wrapper {
-  background-color: #222;
   padding: 0 20px;
   width: 100%;
   display: flex;
@@ -43,21 +51,61 @@ body {
   max-width: var(--block-content-max-width);
   width: 100%;
 }
+.section-title {
+  padding-left: 40px;
+  position: relative;
+  color: var(--aside-h2-color-text);
+  background-color: var(--backgpound-color-h2-header-aside);
+}
+.section-title::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background-color: var(--backgpound-color-h2-header-before);
+}
+
+/* Block Person info and foto */
+
 .person-info {
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
-  background-color: #4c4c4c;
   width: 100%;
 }
 .person-foto {
-  background-color: blue;
   width: 30%;
+  overflow: hidden;
+}
+.person-foto-wrapper {
+  text-align: center;
+  width: 100%;
+  height: 500px;
+}
+.img-responsive {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .person-profi {
-  background-color: chartreuse;
+  display: flex;
+  align-items: center;
   width: 70%;
 }
+.person-wrapper {
+  padding: 40px;
+}
+.person-wrapper .person-name {
+  padding-bottom: 20px;
+}
+.person-wrapper .person-jobs {
+  font-style: italic;
+  font-size: 30px;
+  background-color: var(--background-color-text-content);
+  color: var(--color-text-content);
+}
+/* end person block */
 
 /* Styles main Menu*/
 .header-wrapper {
@@ -66,7 +114,6 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   margin: 0 auto;
-  z-index: 3;
 }
 
 .page-header {
@@ -76,7 +123,8 @@ body {
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  background-color: #fff;
+  background-color: var(--backgpound-color-nav-menu);
+  z-index: 3;
 }
 
 .page-navigation {
@@ -142,28 +190,130 @@ body {
 .site-navigation-link:hover {
   color: var(--color-hover-link-menu);
 }
+/* end main menu */
+
+/* sidebar slyles */
 
 aside {
   display: block;
-  background-color: aqua;
+  background-color: var(--backgpound-color-aside);
   width: 30%;
-  height: 1140px;
+  color: #fff;
 }
+
+.common-style ul {
+  list-style: none;
+  padding: 40px;
+}
+.contacts {
+  margin-top: 60px;
+}
+
+
+.languages-item {
+  line-height: 16px;
+  position: relative;
+  padding: 0 0 10px 15px;
+}
+.languages-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: var(--backgpound-color-h2-header-before);
+}
+.skill-wrapper {
+  list-style: none;
+  padding: 40px;
+}
+.skill-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.skill-text {
+  margin-right: 10px;
+}
+.skill-list {
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+.skills-item {
+  width: 10px;
+  height: 10px;
+  background-color: var(--backgpound-color-h2-header-before);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.skills-list-item-gray {
+  background-color: var(--color-hover-border-link-menu);
+}
+.about {
+  padding: 20px 20px 20px 40px;
+}
+
+/* end sidebar styles */
 main {
-  background-color: crimson;
   width: 70%;
-  height: 1140px;
+}
+.edu-block {
+  padding: 20px 20px 20px 40px;
+}
+.udy-date {
+  display: inline-block;
+  background-color: var(--backgpound-color-h2-header-before);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 8px;
 }
 footer {
-  height: 300px;
+  height: 100px;
   background-color: darkcyan;
   width: 100%;
+}
+
+@media (max-width: 992px) {
+  /* Adaptive content blocks */
+
+  .person-foto {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .img-responsive {
+    width: auto;
+    height: 100%;
+  }
+  .person-profi {
+    flex: 0 0 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  aside {
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 1;
+  }
+  main {
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 0;
+  }
 }
 
 @media (max-width: 767px) {
   .header-wrapper {
     justify-content: end;
   }
+
   .content {
     padding-top: 42px;
   }
@@ -264,35 +414,13 @@ footer {
     transform: rotate(135deg);
   }
 }
-
-@media (max-width: 992px) {
-  /* Adaptive content blocks */
-  .content {
-    flex-direction: row-reverse;
+@media (max-width: 576px) {
+  .person-foto-wrapper {
+    height: 360px;
   }
-  .person-foto {
-    background-color: blue;
-    flex: 0 0 100%;
-    width: 100%;
-  }
-  .person-profi {
-    background-color: chartreuse;
-    flex: 0 0 100%;
-    width: 100%;
-  }
-
-  aside {
-    background-color: aqua;
-    flex: 0 0 100%;
-    max-width: 100%;
-    height: 1140px;
-    order: 1;
-  }
-  main {
-    background-color: crimson;
-    flex: 0 0 100%;
-    height: 1140px;
-    max-width: 100%;
-    order: 0;
+}
+@media (max-width: 320px) {
+  .person-foto-wrapper {
+    height: 280px;
   }
 }
