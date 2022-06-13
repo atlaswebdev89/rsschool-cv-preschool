@@ -1,24 +1,26 @@
 :root {
   --body-main-color: rgb(237 237 237);
-  --backgpound-color-nav-menu:#fff;
+  --backgpound-color-nav-menu:#ffffff;
   --color-link-menu: rgb(33, 35, 36);
   --color-hover-link-menu: rgb(143, 143, 143);
   --color-hover-border-link-menu: #534e4e;
-
+  --color-href:#c4c751;
   --color-link-mobile-menu: aliceblue;
-  --color-hover-link-mobile-menu: #fff;
-  --color-hover-border-link-mobile-menu: #fff;
+  --color-hover-link-mobile-menu: #ffffff;
+  --color-hover-border-link-mobile-menu: #ffffff;
   --color-background-menu-mobile: #4c4c4c;
-  --color-burger: #222;
-  --block-content-max-width: 1400px;
+  --color-burger: #222222;
+  --block-content-max-width: 1440px;
 
   --background-color-text-content: var(--color-hover-border-link-menu);
-  --color-text-content: #fff;
+  --color-text-content: #ffffff;
   --backgpound-color-aside: rgb(95, 95, 122);
-  --aside-h2-color-text: #fff;
+  --aside-h2-color-text: #ffffff;
+  --main-h2-color-text:#222222;
   --color-ul-item: rgb(26, 88, 150);
   --backgpound-color-h2-header-aside: rgb(143, 136, 136);
   --backgpound-color-h2-header-before: rgb(238, 241, 21);
+  --backgpound-color-h2-header-main:rgb(212, 219, 212);
 }
 
 * {
@@ -27,11 +29,18 @@
   padding: 0;
 }
 
+a {
+  color: var(--color-href);
+  text-decoration: none;
+}
 html,
 body {
   background-color: var(--body-main-color);
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 400;
+}
+html {
+  scroll-behavior: smooth; 
 }
 
 .wrapper {
@@ -66,6 +75,22 @@ body {
   width: 20px;
   background-color: var(--backgpound-color-h2-header-before);
 }
+.section-title-main {
+  padding-left: 60px;
+  position: relative;
+  color: var(--main-h2-color-text);
+  background-color: var(--backgpound-color-h2-header-main);
+}
+.section-title-main::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background-color: var(--backgpound-color-h2-header-before);
+}
+
 
 /* Block Person info and foto */
 
@@ -208,6 +233,19 @@ aside {
 .contacts {
   margin-top: 60px;
 }
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content:first baseline;
+  margin-bottom: 15px;
+}
+.contact-item .fa {
+  color: var(--backgpound-color-h2-header-before);
+  font-size: 20px;
+  width: 50px;
+  padding-right: 20px;
+}
+
 
 
 .languages-item {
@@ -256,7 +294,7 @@ aside {
   background-color: var(--color-hover-border-link-menu);
 }
 .about {
-  padding: 20px 20px 20px 40px;
+  padding: 20px 20px 20px 60px;
 }
 
 /* end sidebar styles */
@@ -264,7 +302,7 @@ main {
   width: 70%;
 }
 .edu-block {
-  padding: 20px 20px 20px 40px;
+  padding: 20px 20px 20px 60px;
 }
 .udy-date {
   display: inline-block;
