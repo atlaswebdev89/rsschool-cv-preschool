@@ -173,8 +173,16 @@ h1 {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+  position: relative;
 }
-
+.overlay-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
 .site-navigation {
   display: flex;
   justify-content: space-around;
@@ -182,6 +190,7 @@ h1 {
 
 .site-navigation__item {
   list-style: none;
+  z-index: 2;
 }
 
 .site-navigation-link {
@@ -203,14 +212,16 @@ h1 {
   left: 0;
   border: 2px solid var(--color-hover-border-link-menu);
   opacity: 0;
-  transition: 0.7s;
+  transition: transform 0.7s ease;
+  -webkit-transition: transform 0.7s ease;
   pointer-events: none;
   transform: scale(0.8);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .site-navigation-link:hover::before {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 .site-navigation-link:hover {
@@ -442,18 +453,26 @@ footer {
     padding-top: 42px;
   }
   .page-navigation {
-    display: none;
+    display: block;
+    visibility: hidden;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.9;
+    margin-top: 0;
+    opacity: 0.95;
     background-color: var(--color-background-menu-mobile);
     transform: translateY(-200%);
     transition: all 0.7s ease;
   }
-
+  .page-navigation.active {
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .lock {
+    overflow: hidden;
+  }
   .site-navigation {
     display: flex;
     height: 100%;
@@ -522,17 +541,20 @@ footer {
     background-color: var(--color-burger);
     transition: all 0.4s;
   }
-  .page-header-burger:hover .burger-line {
+  .page-header-burger.active {
+    z-index: 3;
+  }
+  .page-header-burger.active .burger-line {
     opacity: 0;
   }
 
-  .page-header-burger:hover::before {
+  .page-header-burger.active::before {
     top: 10px;
     width: 20px;
     transform: rotate(45deg);
   }
 
-  .page-header-burger:hover::after {
+  .page-header-burger.active::after {
     top: 10px;
     width: 20px;
     transform: rotate(135deg);
