@@ -445,10 +445,18 @@ footer {
 }
 
 @media (max-width: 767px) {
+  * {
+    font-size: 16px;
+  }
   .header-wrapper {
     justify-content: end;
   }
-
+  .codes {
+    padding: 10px 10px;
+  }
+  .codes code {
+    font-size: 14px;
+  }
   .content {
     padding-top: 42px;
   }
@@ -561,6 +569,13 @@ footer {
   }
 }
 @media (max-width: 576px) {
+  * {
+    font-size: 14px;
+  }
+
+  .codes code {
+    font-size: 10px;
+  }
   .person-foto-wrapper {
     height: 360px;
   }
@@ -568,5 +583,8 @@ footer {
 @media (max-width: 320px) {
   .person-foto-wrapper {
     height: 280px;
+  }
+  .codes code {
+    font-size: 8px;
   }
 }
